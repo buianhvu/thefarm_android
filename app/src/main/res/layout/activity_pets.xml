@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.farm.PetsActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tlb_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/pig_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_pig"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pig" />
+
+        <TextView
+            android:id="@+id/tvPig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_pig"
+            android:gravity="center_vertical"
+            android:text="Pigs"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buffalo_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_buffalo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/buffalo" />
+
+        <TextView
+            android:id="@+id/tvbuffalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_buffalo"
+            android:gravity="center_vertical"
+            android:text="Buffalos"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cow_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_cow"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cow" />
+
+        <TextView
+            android:id="@+id/tvcow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_cow"
+            android:gravity="center_vertical"
+            android:text="Cows"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/chicken_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_chicken"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/chicken" />
+
+        <TextView
+            android:id="@+id/tvchicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_chicken"
+            android:gravity="center_vertical"
+            android:text="Chickens"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

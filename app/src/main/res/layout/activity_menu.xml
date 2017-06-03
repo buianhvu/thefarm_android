@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.farm.MenuActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:weightSum="4"
+    android:gravity="bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tlb_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/petsitem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00">
+
+        <ImageView
+            android:id="@+id/image_pets"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/pets" />
+
+        <TextView
+            android:id="@+id/tvPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_pets"
+            android:text="Manage Pets"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fooditem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_food"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/tvFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_food"
+            android:text="Manage Food"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/moneyitem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_money"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/money_logo" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_money"
+            android:text="Manage Finance"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/bar"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical"
+            android:background="@color/bar_select"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pets" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="ANIMALS"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/money_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="FINANCE"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/food" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="FOOD"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

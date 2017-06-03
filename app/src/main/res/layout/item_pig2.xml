@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_pig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:longClickable="true"
+    android:background="@color/row_color">
+
+
+    <TextView
+        android:id="@+id/row_animal_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost: 459$"
+        android:textSize="10sp"
+        android:layout_alignBaseline="@+id/row_animal_weight"
+        android:layout_alignBottom="@+id/row_animal_weight"
+        android:layout_alignLeft="@+id/row_animal_sex"
+        android:layout_alignStart="@+id/row_animal_sex" />
+
+    <TextView
+        android:id="@+id/row_animal_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source"
+        android:textSize="10sp"
+        android:layout_alignBaseline="@+id/row_tv_animalstatus"
+        android:layout_alignBottom="@+id/row_tv_animalstatus"
+        android:layout_alignLeft="@+id/row_animal_cost"
+        android:layout_alignStart="@+id/row_animal_cost" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pig_icon" />
+
+    <TextView
+        android:id="@+id/row_tv_animalid"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:text="pigs01203123"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/row_animal_health_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health: 97"
+        android:textSize="10sp"
+        android:layout_alignBaseline="@+id/row_tv_animalid"
+        android:layout_alignBottom="@+id/row_tv_animalid"
+        android:layout_toRightOf="@+id/row_tv_animalid"
+        android:layout_toEndOf="@+id/row_tv_animalid" />
+
+    <TextView
+        android:id="@+id/row_tv_animalstatus"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Status: Healthy"
+        android:textSize="10sp"
+        android:layout_alignBottom="@+id/row_tv_animalid"
+        android:layout_toRightOf="@+id/row_tv_animalid"
+        android:layout_toEndOf="@+id/row_tv_animalid" />
+
+    <TextView
+        android:id="@+id/row_animal_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight: 148"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/row_tv_animalid"
+        android:layout_toEndOf="@+id/row_tv_animalid" />
+
+    <TextView
+        android:id="@+id/row_animal_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex: Female"
+        android:textSize="10sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/row_animal_health_index"
+        android:layout_alignBottom="@+id/row_animal_health_index"
+        android:layout_toRightOf="@+id/row_tv_animalstatus"
+        android:layout_toEndOf="@+id/row_tv_animalstatus" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        app:srcCompat="@drawable/dollar"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:text="ID: 12"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: In"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignBaseline="@+id/tvID"
+        android:layout_alignBottom="@+id/tvID"
+        android:layout_toRightOf="@+id/tvID"
+        android:layout_toEndOf="@+id/tvID" />
+
+    <TextView
+        android:id="@+id/tvAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvType"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/tvType"
+        android:layout_toRightOf="@+id/tvType"
+        android:text="Action: Sell_Animal" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvID"
+        android:layout_alignStart="@+id/tvID"
+        android:layout_below="@+id/tvID"
+        android:text="Money: 1231 $" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/2/1006"
+        android:layout_below="@+id/tvAction"
+        android:layout_alignLeft="@+id/tvAction"
+        android:layout_alignStart="@+id/tvAction" />
+</RelativeLayout>

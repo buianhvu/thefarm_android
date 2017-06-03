@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.farm.MenuActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tlb_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rlRice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00">
+
+        <ImageView
+            android:id="@+id/image_rice"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/rice_ic" />
+
+        <TextView
+            android:id="@+id/tvRice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_rice"
+            android:gravity="center_vertical"
+            android:text="Rice: 50 Kgs"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGrass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_grass"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/download" />
+
+        <TextView
+            android:id="@+id/tvGrass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_grass"
+            android:gravity="center_vertical"
+            android:text="Grass: 50 Kgs"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlGeneralFood"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_general"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/general_food" />
+
+        <TextView
+            android:id="@+id/tvGF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_general"
+            android:gravity="center_vertical"
+            android:text="GeneralFood: 50 Kgs"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlMeat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.00"
+        >
+
+        <ImageView
+            android:id="@+id/image_meat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="false"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/meat_ic" />
+
+        <TextView
+            android:id="@+id/tvMeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_meat"
+            android:gravity="center_vertical"
+            android:text="Meat: 50 Kgs"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
